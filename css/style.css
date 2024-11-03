@@ -15,7 +15,7 @@ main {
     align-items: center;
 }
 
-.container-header button{
+.container-header button {
     height: 3em;
     display: flex;
     gap: 0.3em;
