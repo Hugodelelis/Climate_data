@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>ProjetoJs</title>
+</head>
+<body>
+    <main>
+        <section class="container-flex d-flex row col-12 justify-content-center p-2">
+            <div class="container-header d-flex d-flex justify-content-between align-items-center col-12 p-2">
+                <button class="btn btn-primary"><i class="bi bi-floppy-fill"></i>Salvar</button>
+                <h1 class="h1 display-5">Relatório clima</h1>
+            </div>
+
+            <div class="options p-2 col-12">
+                <label class="d-flex flex-row" for="hora">Periodo de coleta:
+                    <span class="hour ms-2">00:00:00</span>
+                </label>
+
+                <label class="d-flex form-control align-items-center mt-3" for="estado">Estado:
+                    <select class="form-select ms-3" name="estado" aria-label="estado">
+                        <option selected>Selecione</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </label>
+
+                <label class="d-flex form-control align-items-center mt-3" for="cidade">Cidade:
+                    <select class="form-select ms-3" name="cidade" aria-label="cidade">
+                        <option selected>Selecione</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="info col-12 row justify-content-center">
+                <h2 class="h2 display-6 text-center">Qualidade do ar</h2>
+
+                <div class="status bg-success text-white d-flex justify-content-center align-items-center rounded-3 col-8">
+                    Boa
+                </div>
+
+                <div class="more-infos mt-3 row justify-content-center">
+                    <span class="bg-info p-1 text-center rounded-2 col-3">co: 402</span>
+                    <span class="bg-info p-1 text-center rounded-2 col-3 ms-3">no2: 402</span>
+                    <span class="bg-info p-1 text-center rounded-2 col-3 ms-3">o3: 402</span>
+                    <span class="bg-info p-1 text-center rounded-2 col-3 mt-2">pm2_5: 402</span>
+                    <span class="bg-info p-1 text-center rounded-2 col-3 mt-2 ms-3">pm10: 402</span>
+                    <span class="bg-info p-1 text-center rounded-2 col-3 mt-2 ms-3">so2: 402</span>
+                </div>
+            </div>
+
+            <div class="descrip col-12 mt-4 text-center">
+                <p>
+                    No dia <span class="date text-primary">10/11/2005</span> 
+                    foram coletados os dados climáticos de <span class="city text-primary">Volta Redonda - Rj</span>
+                    presentes no quadro abaixo.
+                </p>
+            </div>
+
+            <div class="content-table">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Condição</th>
+                        <th scope="col">Chuva (%)</th>
+                        <th scope="col">Temperatura (c°)</th>
+                        <th scope="col">Sensação (c°)</th>
+                        <th scope="col">Umidade (%)</th>
+                        <th scope="col">Vento (Kph)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

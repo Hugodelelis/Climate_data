@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header button{
+    height: 3em;
+    display: flex;
+    gap: 0.3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex {
+    width: 55% !important;
+}
+
+.status {
+    height: 2.5em;
+}
+
+.content-table {
+    overflow: auto;
+}
+
+@media (max-width: 992px) {
+    .container-flex {
+        width: 100% !important;
+    }
+}
