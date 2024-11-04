@@ -104,7 +104,7 @@ document.querySelector('#state').addEventListener('change', cleanTable);
 
 export async function getClimateDataTable() {
     const city = document.querySelector('#city').value
-    const table = document.querySelector('.table')
+    const table = document.querySelector('.table-content')
 
     if(city) {
         const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1&aqi=yes&alerts=yes&&lang=pt`;
@@ -114,12 +114,10 @@ export async function getClimateDataTable() {
 
         if (forecast && forecast.forecastday[0].hour) {
             const hourlyData = forecast.forecastday[0].hour;
-            console.log(hourlyData)
 
             hourlyData.forEach((hour) => {
                 const timeOnly = hour.time.split(' ')[1];
                 table.innerHTML += `
-                    <tbody>
                     <tr>
                         <th scope="row">${timeOnly}</th>
                         <td>${hour.condition.text}</td>
@@ -129,7 +127,6 @@ export async function getClimateDataTable() {
                         <td>${hour.humidity}%</td>
                         <td>${hour.wind_kph}Kph</td>
                     </tr>
-                    </tbody>
                 `
             });
         }
@@ -151,5 +148,8 @@ export function cleanTable() {
                 <th scope="col">Vento (Kph)</th>
             </tr>
         </thead>
+        <tbody class="table-content">
+
+        </tbody>
     `
 }

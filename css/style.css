@@ -54,3 +54,12 @@ main {
 .bg-orange {
     background-color: orange;
 }
+
+.content-table {
+    height: 30em !important;
+}
+
+.content-table thead {
+    position: sticky;
+    top: 0;
+}
