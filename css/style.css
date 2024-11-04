@@ -27,6 +27,11 @@ main {
     width: 70% !important;
 }
 
+.row {
+    padding-left: 0 !;
+    padding-right: 0 !important;
+}
+
 .status {
     height: 2.5em;
 }
@@ -35,6 +40,7 @@ main {
     overflow-y: hidden;
     overflow-x: auto;
 }
+
 
 @media (max-width:1200px) {
     .container-flex {
@@ -52,11 +58,8 @@ main {
     background-color: orange;
 }
 
-.content-table {
-    height: 70em !important;
-}
-
 .content-table thead {
     position: sticky;
     top: 0;
 }
+

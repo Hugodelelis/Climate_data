@@ -19,7 +19,7 @@
 </head>
 <body>
     <main>
-        <section class="container-flex d-flex row col-12 justify-content-center p-2">
+        <section class="container-flex d-flex row col-12 justify-content-center align-items-center p-2">
             <div class="container-header d-flex d-flex justify-content-between align-items-center col-12 px-2 py-1">
                 <button class="btn btn-primary save-btn"><i class="bi bi-floppy-fill"></i>Salvar</button>
                 <h1 class="h1 display-6">Relatório clima</h1>
@@ -43,7 +43,7 @@
                 </label>
             </div>
 
-            <div id="report">
+            <div id="report d-flex justify-content-center align-items-center">
                 
                 <div class="descrip col-12 mt-4 text-center">
                     <p>
@@ -52,23 +52,22 @@
                         presentes nos quadros abaixo.
                     </p>
                 </div>
-
-                <div class="info col-12 row justify-content-center">
+                <div class="info col-12 d-flex flex-column align-items-center">
                     <h2 class="h2 display-6 text-center">Qualidade do ar</h2>
-
-                    <div class="status text-white d-flex justify-content-center align-items-center rounded-3 col-8">
                 
+                    <div class="status text-white d-flex justify-content-center align-items-center rounded-3 col-8">
                     </div>
-
-                    <div class="more-infos mt-1 row justify-content-center">
-                        <span class="bg-info p-1 text-center rounded-2 col-12 col-md-3 mt-2 ms-md-2 info-ar"> </span>
-                        <span class="bg-info p-1 text-center rounded-2 col-12 col-md-3 mt-2 ms-md-2 info-ar"> </span>
-                        <span class="bg-info p-1 text-center rounded-2 col-12 col-md-3 mt-2 ms-md-2 info-ar"> </span>
-                        <span class="bg-info p-1 text-center rounded-2 col-12 col-md-3 mt-2 ms-md-2 info-ar"> </span>
-                        <span class="bg-info p-1 text-center rounded-2 col-12 col-md-3 mt-2 ms-md-2 info-ar"> </span>
-                        <span class="bg-info p-1 text-center rounded-2 col-12 col-md-3 mt-2 ms-md-2 info-ar"> </span>
+                
+                    <div class="more-infos mt-1 d-flex flex-wrap justify-content-center align-items-center col-12">
+                        <span class="info-ar bg-info p-1 text-center rounded-2 col-12 col-md-3 ms-md-2 mt-2"> </span>
+                        <span class="info-ar bg-info p-1 text-center rounded-2 col-12 col-md-3 ms-md-2 mt-2"> </span>
+                        <span class="info-ar bg-info p-1 text-center rounded-2 col-12 col-md-3 ms-md-2 mt-2"> </span>
+                        <span class="info-ar bg-info p-1 text-center rounded-2 col-12 col-md-3 ms-md-2 mt-2"> </span>
+                        <span class="info-ar bg-info p-1 text-center rounded-2 col-12 col-md-3 ms-md-2 mt-2"> </span>
+                        <span class="info-ar bg-info p-1 text-center rounded-2 col-12 col-md-3 ms-md-2 mt-2"> </span>
                     </div>
                 </div>
+                
                 
                 <div class="content-table col-12 mt-5">
                     <table class="table">
