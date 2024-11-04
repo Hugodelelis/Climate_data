@@ -25,7 +25,5 @@ export function updateCityDisplay() {
 
     if (city && city !== "Selecione" && state !== "Selecione") {
         citySelect.innerHTML = `${city} - ${state}`;
-    } else {
-        citySelect.innerHTML = "Selecione uma cidade";
     }
 }
