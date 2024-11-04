@@ -50,10 +50,36 @@ export async function showStatus() {
                 confirmButtonText: 'Voltar'
             }).then(() => {
                 const status = document.querySelector('.status')
+                const table = document.querySelector('.table')
+                const info = document.querySelectorAll('.info-ar')
     
                 status.classList.remove('bg-warning', 'bg-danger', 'bg-success', 'bg-orange');
                 status.classList.add('bg-secondary');
                 status.innerHTML = 'Selecione Outra'
+
+                table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Condição</th>
+                        <th scope="col">Chuva (%)</th>
+                        <th scope="col">Temperatura (c°)</th>
+                        <th scope="col">Sensação (c°)</th>
+                        <th scope="col">Umidade (%)</th>
+                        <th scope="col">Vento (Kph)</th>
+                    </tr>
+                </thead>
+                <tbody class="table-content">
+        
+                </tbody>
+            `
+
+            info[0].innerHTML = 'co'
+            info[1].innerHTML = 'no2'
+            info[2].innerHTML = 'o3'
+            info[3].innerHTML = 'pm2_5'
+            info[4].innerHTML = 'pm10'
+            info[5].innerHTML = 'so2'
             });
         }
     } 
