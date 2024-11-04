@@ -32,7 +32,7 @@ main {
 }
 
 .content-table {
-    overflow: auto;
+    overflow-x: auto;
 }
 
 @media (max-width:1200px) {
