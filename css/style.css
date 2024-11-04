@@ -32,6 +32,7 @@ main {
 }
 
 .content-table {
+    overflow-y: hidden;
     overflow-x: auto;
 }
 
