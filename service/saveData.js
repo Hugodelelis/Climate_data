@@ -3,7 +3,7 @@ export async function savePDF() {
 
     const options = {
         margin: [5, 5, 5, 5],
-        filename: 'Relatiorio-climatico.pdf',
+        filename: 'Relatiorio-climatico' + '.pdf',
         html2canvas: { 
             scale: 2, 
         },
