@@ -12,7 +12,7 @@ main {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .container-header button {
