@@ -140,6 +140,7 @@ export async function getClimateDataTable() {
 
         if (forecast && forecast.forecastday[0].hour) {
             const hourlyData = forecast.forecastday[0].hour;
+            table.innerHTML = ''
 
             hourlyData.forEach((hour) => {
                 const timeOnly = hour.time.split(' ')[1];
